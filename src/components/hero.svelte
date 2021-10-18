@@ -3,8 +3,8 @@
 
 </script>
 
-<div class="hero min-h-full bg-base-200">
-	<div class="flex-col justify-center hero-content lg:flex-row">
+<div class="hero min-h-full bg-base-200 block md:grid">
+	<div class="flex-col justify-center hero-content lg:flex-row m-2">
 		<div class="text-center lg:text-left hidden lg:block">
 			<h1 class="mb-5 text-5xl font-bold">Simple Poll</h1>
 			<p class="mb-5">
