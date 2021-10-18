@@ -2,4 +2,4 @@
     import Stats from '../../components/stats.svelte'
 </script>
 
-<Stats></Stats>
+<Stats entityName="Polls"></Stats>

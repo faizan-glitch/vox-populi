@@ -1,3 +1,6 @@
+<script>
+    export let entityName = ""
+</script>
 <div class="container mx-auto text-center">
     <div class="md:w-full w-72 my-5 md:stats flex-1 mx-auto sr">
         <div class="stat my-3 md:m-0 rounded-lg md:rounded-none">
@@ -16,7 +19,7 @@
                     />
                 </svg>
             </div>
-            <div class="stat-title">Total Polls</div>
+            <div class="stat-title">Total {entityName}</div>
             <div class="stat-value text-primary">25.6K</div>
             <div class="stat-desc">21% more than last month</div>
         </div>
@@ -36,7 +39,7 @@
                     />
                 </svg>
             </div>
-            <div class="stat-title">Poll Responses</div>
+            <div class="stat-title">{entityName} Responses</div>
             <div class="stat-value text-info">2.6K</div>
             <div class="stat-desc">21% more than last month</div>
         </div>
@@ -53,8 +56,8 @@
                 </div> -->
             </div>
             <div class="stat-value">86%</div>
-            <div class="stat-title">Active Polls</div>
-            <div class="stat-desc text-info">981 polls active</div>
+            <div class="stat-title">Active {entityName}</div>
+            <div class="stat-desc text-info">981 {entityName.toLowerCase()} active</div>
         </div>
     </div>
 </div>
