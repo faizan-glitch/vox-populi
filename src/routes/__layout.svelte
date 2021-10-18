@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-
 	import Navbar from '../components/navbar.svelte';
 </script>
 
@@ -9,8 +8,8 @@
 
 	<div class="flex flex-col drawer-content bg-base-200">
 		<Navbar />
-
-		<slot />
+		
+		<slot/>
 	</div>
 	<div class="drawer-side">
 		<label for="my-drawer-3" class="drawer-overlay" />
