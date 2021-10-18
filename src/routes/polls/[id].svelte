@@ -1,0 +1,1 @@
+<h2>View Single Poll</h2>
