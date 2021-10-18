@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import Navbar from '../components/navbar.svelte';
+	import Footer from '../components/footer.svelte';
 </script>
 
 <div class="rounded-lg shadow drawer h-screen">
@@ -10,6 +11,7 @@
 		<Navbar />
 		
 		<slot/>
+		<Footer></Footer>
 	</div>
 	<div class="drawer-side">
 		<label for="my-drawer-3" class="drawer-overlay" />
