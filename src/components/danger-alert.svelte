@@ -1,5 +1,6 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
+	export let message;
 </script>
 
 <div class="alert alert-error absolute lg:w-96 z-10 mb-5  bottom-0  mx-5 " in:fly out:fade>
@@ -18,6 +19,6 @@
 			/>
 		</svg>
 		<!-- svelte-ignore a11y-label-has-associated-control -->
-		<label>Lorem ipsum dolor sit amet, consectetur adip!</label>
+		<label>{message}</label>
 	</div>
 </div>

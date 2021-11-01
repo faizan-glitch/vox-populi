@@ -1,8 +1,9 @@
 <script>
     export let entityName = ""
+    export let items = [];
 </script>
-<div class="container mx-auto text-center">
-    <div class="md:w-full w-72 my-5 md:stats flex-1 mx-auto sr">
+<div class="container mx-auto mt-5 text-center shadow-md  rounded-xl">
+    <div class="md:w-full w-72 rounded-lg md:stats flex-1 mx-auto sr">
         <div class="stat my-3 md:m-0 rounded-lg md:rounded-none">
             <div class="stat-figure text-primary">
                 <svg
@@ -20,7 +21,7 @@
                 </svg>
             </div>
             <div class="stat-title">Total {entityName}</div>
-            <div class="stat-value text-primary">25.6K</div>
+            <div class="stat-value text-primary">{items.length}</div>
             <div class="stat-desc">21% more than last month</div>
         </div>
         <div class="stat my-3 md:m-0 rounded-lg md:rounded-none">
@@ -40,7 +41,7 @@
                 </svg>
             </div>
             <div class="stat-title">{entityName} Responses</div>
-            <div class="stat-value text-info">2.6K</div>
+            <div class="stat-value text-info">2.2K</div>
             <div class="stat-desc">21% more than last month</div>
         </div>
         <div class="stat my-3 md:m-0 rounded-lg md:rounded-none">
@@ -55,9 +56,9 @@
                     </div>
                 </div> -->
             </div>
-            <div class="stat-value">86%</div>
+            <div class="stat-value">{(100 * (items.filter(x => x.active).length / items.length)).toFixed(1)}%</div>
             <div class="stat-title">Active {entityName}</div>
-            <div class="stat-desc text-info">981 {entityName.toLowerCase()} active</div>
+            <div class="stat-desc text-info">{items.filter(x => x.active).length } out of {items.length} {entityName.toLowerCase()} active</div>
         </div>
     </div>
 </div>

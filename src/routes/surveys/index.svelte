@@ -2,4 +2,6 @@
     import Stats from '../../components/stats.svelte'
 </script>
 
-<Stats entityName="Surveys"></Stats>
+<h1>THis is the Surveys Page</h1>
+
+<!-- <Stats entityName="Surveys"></Stats> -->
